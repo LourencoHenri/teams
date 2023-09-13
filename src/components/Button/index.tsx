@@ -6,10 +6,10 @@ type Props = TouchableOpacityProps & {
 	type?: ButtonTypeStyledProps;
 };
 
-export function ListEmpty({ title, type = "primary", ...rest }: Props) {
+export function Button({ title, type = "primary", ...rest }: Props) {
 	return (
-		<Container {...rest}>
-			<Title>Henrique</Title>
+		<Container type={type} {...rest}>
+			<Title>{title}</Title>
 		</Container>
 	);
 }
